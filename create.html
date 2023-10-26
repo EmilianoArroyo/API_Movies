@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Película</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-br {
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h1>Agregar Película</h1>
+            </div>
+            <div class="card-body">
+                <form id="movieForm">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label><span style="color: red;"> *</span>
+                        <input type="text" class="form-control" id="name" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="synopsis">Sinopsis:</label><span style="color: red;"> *</span>
+                        <textarea class="form-control" id="synopsis" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Género:</label><span style="color: red;"> *</span>
+                        <input type="text" class="form-control" id="genre" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duración (minutos):</label><span style="color: red;"> *</span>
+                        <input type="number" class="form-control" id="duration" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="director">Director:</label><span style="color: red;"> *</span>
+                        <input type="text" class="form-control" id="director" required autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="actors">Actores (separados por comas):</label>
+                        <input type="text" class="form-control" id="actors" autocomplete="off">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-br">Agregar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
